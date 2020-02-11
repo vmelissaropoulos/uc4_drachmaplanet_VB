@@ -1,0 +1,303 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{3C378565-5E09-4584-AED5-B0583B164296}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>UC4___DrachmaPlanet.My.MyApplication</StartupObject>
+    <RootNamespace>UC4___DrachmaPlanet</RootNamespace>
+    <AssemblyName>UC4 - DrachmaPlanet</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>UC4 - DrachmaPlanet.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>UC4 - DrachmaPlanet.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="automic">
+      <HintPath>libs\automic.dll</HintPath>
+    </Reference>
+    <Reference Include="IKVM.OpenJDK.Core">
+      <HintPath>libs\IKVM.OpenJDK.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="IKVM.OpenJDK.Remoting">
+      <HintPath>libs\IKVM.OpenJDK.Remoting.dll</HintPath>
+    </Reference>
+    <Reference Include="IKVM.OpenJDK.Security">
+      <HintPath>libs\IKVM.OpenJDK.Security.dll</HintPath>
+    </Reference>
+    <Reference Include="IKVM.OpenJDK.Text">
+      <HintPath>libs\IKVM.OpenJDK.Text.dll</HintPath>
+    </Reference>
+    <Reference Include="IKVM.OpenJDK.Tools">
+      <HintPath>libs\IKVM.OpenJDK.Tools.dll</HintPath>
+    </Reference>
+    <Reference Include="IKVM.OpenJDK.Util">
+      <HintPath>libs\IKVM.OpenJDK.Util.dll</HintPath>
+    </Reference>
+    <Reference Include="IKVM.OpenJDK.XML.API">
+      <HintPath>libs\IKVM.OpenJDK.XML.API.dll</HintPath>
+    </Reference>
+    <Reference Include="IKVM.OpenJDK.XML.Parse">
+      <HintPath>libs\IKVM.OpenJDK.XML.Parse.dll</HintPath>
+    </Reference>
+    <Reference Include="IKVM.OpenJDK.XML.Transform">
+      <HintPath>libs\IKVM.OpenJDK.XML.Transform.dll</HintPath>
+    </Reference>
+    <Reference Include="IKVM.OpenJDK.XML.XPath">
+      <HintPath>libs\IKVM.OpenJDK.XML.XPath.dll</HintPath>
+    </Reference>
+    <Reference Include="IKVM.Runtime">
+      <HintPath>libs\IKVM.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="auth.vb" />
+    <Compile Include="folder.vb" />
+    <Compile Include="frmAnalysis.Designer.vb">
+      <DependentUpon>frmAnalysis.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmAnalysis.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBrowser.Designer.vb">
+      <DependentUpon>frmBrowser.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmBrowser.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDelete.Designer.vb">
+      <DependentUpon>frmDelete.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmDelete.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmHELP.Designer.vb">
+      <DependentUpon>frmHELP.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmHELP.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmJOBSTool.Designer.vb">
+      <DependentUpon>frmJOBSTool.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmJOBSTool.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmJSCH.Designer.vb">
+      <DependentUpon>frmJSCH.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmJSCH.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLogger.Designer.vb">
+      <DependentUpon>frmLogger.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmLogger.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLogin.Designer.vb">
+      <DependentUpon>frmLogin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmLogin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMove.Designer.vb">
+      <DependentUpon>frmMove.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmMove.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPrePost_Process.Designer.vb">
+      <DependentUpon>frmPrePost_Process.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmPrePost_Process.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRename.Designer.vb">
+      <DependentUpon>frmRename.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmRename.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmReplaceListDialog.Designer.vb">
+      <DependentUpon>frmReplaceListDialog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmReplaceListDialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSelectFolder.Designer.vb">
+      <DependentUpon>frmSelectFolder.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmSelectFolder.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="internal.vb" />
+    <Compile Include="internal_gui.vb" />
+    <Compile Include="JOBP.vb" />
+    <Compile Include="JOBS.vb" />
+    <Compile Include="JSCH.vb" />
+    <Compile Include="logger.vb" />
+    <Compile Include="MDIParent1.Designer.vb">
+      <DependentUpon>MDIParent1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MDIParent1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="move.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="objJOBS.vb" />
+    <Compile Include="regex.vb" />
+    <Compile Include="rename.vb" />
+    <Compile Include="search.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="frmAnalysis.resx">
+      <DependentUpon>frmAnalysis.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBrowser.resx">
+      <DependentUpon>frmBrowser.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDelete.resx">
+      <DependentUpon>frmDelete.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmHELP.resx">
+      <DependentUpon>frmHELP.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmJOBSTool.resx">
+      <DependentUpon>frmJOBSTool.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmJSCH.resx">
+      <DependentUpon>frmJSCH.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLogger.resx">
+      <DependentUpon>frmLogger.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLogin.resx">
+      <DependentUpon>frmLogin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMove.resx">
+      <DependentUpon>frmMove.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPrePost_Process.resx">
+      <DependentUpon>frmPrePost_Process.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRename.resx">
+      <DependentUpon>frmRename.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmReplaceListDialog.resx">
+      <DependentUpon>frmReplaceListDialog.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSelectFolder.resx">
+      <DependentUpon>frmSelectFolder.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MDIParent1.resx">
+      <DependentUpon>MDIParent1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shell32_1521.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shell32_2.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shell32_148.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
