@@ -17,11 +17,13 @@ Public Class MDIParent1
     End Sub
 
     Private Sub MDIParent1_FormClosing(ByVal sender As Object, ByVal e As System.Windows.Forms.FormClosingEventArgs) Handles Me.FormClosing
-        Try
-            myConnection.close()
-        Catch ex As Exception
-            MsgBox("Could not close connection!" + vbCrLf + ex.Message + vbCrLf + vbCrLf + "No worries! Propably no connection was made in the first place.", vbOKOnly + vbInformation, "Connection Close")
-        End Try
+        If Not IsNothing(myConnection) Then
+            Try
+                myConnection.close()
+            Catch ex As Exception
+                MsgBox("Could not close connection!" + vbCrLf + ex.Message + vbCrLf + vbCrLf + "No worries! Propably no connection was made in the first place.", vbOKOnly + vbInformation, "Connection Close")
+            End Try
+        End If
     End Sub
 
     Private Sub MDIParent1_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
